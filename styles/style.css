@@ -1,0 +1,246 @@
+* {
+  box-sizing:border-box;
+}
+
+html {
+  height:100vh;
+}
+
+body {
+  height:100vh;
+  font-family: open sans;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+article {
+  height: 700px;
+  width: 1110px;
+  align-items:center;
+  background-image: url(../assets/CARD\ BG.jpg);
+  box-shadow: 2px 2px 15px 0px #000;
+  border-radius: 30px;
+  position: absolute;
+  transition:.25s;
+  color: #fff;
+}
+
+header {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  justify-content:flex-end;
+  
+}
+
+h1 {
+  position: absolute;
+  top: 16px;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 36px;
+  letter-spacing: 4.7px;
+  border-bottom: 1px solid #B98A48;
+  padding-bottom: 8px;
+}
+
+h2 {
+  position:absolute;
+  top: 94px;
+  color:#fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  letter-spacing: 7px;
+}
+
+.about {
+  column-count: 2;
+  column-width: 300px;
+  column-gap: 330px;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 24px;
+  position: absolute;
+  top: 220px;
+  left: 40px;
+  right: 40px;
+}
+
+h3 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  letter-spacing: 5px;
+  position: relative;
+  top: 5px;
+  /* white-space: nowrap; */
+}
+
+ul{
+  list-style-position: inside;
+  color:#fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 36px;
+  position: relative;
+  right: 40px
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #B98A48;
+  margin: 3px 0;
+  padding: 0;
+  bottom: 3px;
+}
+
+.phone {
+  position: relative;
+  top: 25px;
+}
+
+.mail {
+  position: relative;
+  top: 44px
+}
+
+.contactgegevens {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 36px;
+  position: relative;
+  left: 30px;
+  bottom: 39px;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  width: 1080px;
+  justify-content: space-evenly;
+  position: inherit;
+  bottom: 18px;
+
+}
+
+img {
+  width: 250px;
+  border-radius:250px;
+  border:1px solid #fff;
+  position:absolute;
+  top: 172px;
+  left: 430px;
+  transition: .25s .15s;
+}
+
+dt{
+  font-weight: bold;
+  border-top: 1px solid rgba(0,0,0,0.3);
+  padding-top: .25rem;
+  margin-top: .25rem;
+}
+
+dt:nth-of-type(1){ grid-area: html-dt; }
+dt:nth-of-type(2){ grid-area: css-dt; transform: translateY(1rem);}
+dt:nth-of-type(3){ grid-area: js-dt; }
+
+dd {
+  margin:0;
+  padding-left:.3rem;
+  transition:.25s .3s;
+}
+
+dd:nth-of-type(2){  
+  transform: translateY(1rem);
+}
+
+.wrapper{
+  position: inherit;
+  left:  813px;
+  bottom: 40px
+}
+
+.wrapper .button{
+display: inline-block;
+height: 40px;
+width: 40px;
+margin: 0 5px;
+overflow: hidden;
+border: 1px solid #fff;
+border-radius: 50px;
+cursor: pointer;
+box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover{
+width: 160px;
+}
+
+.wrapper .button .icon{
+display: inline-block;
+height: 40px;
+width: 40px;
+text-align: center;
+border-radius: 50px;
+box-sizing: border-box;
+line-height: 40px;
+transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon{
+background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.wrapper .button:nth-child(2):hover .icon{
+background: #0077b5; 
+}
+
+.wrapper .button .icon i{
+color: #fff;
+font-size: 22px;
+line-height: 40px;
+transition: all 0.3s ease-out;
+position: relative;
+bottom: 1px;
+right: 1px;
+}
+
+.wrapper .button:hover .icon i{
+color: #fff;
+}
+
+.wrapper .button span{
+font-size: 18px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 300;
+margin-left: 10px;
+transition: all 0.3s ease-out;
+position:relative;
+bottom: 2px;
+}
+
+.wrapper .button:nth-child(1) span{
+color: #fff;
+} 
+
+.wrapper .button:nth-child(2) span{
+color: #fff;
+}
+
+a {
+ text-decoration: none;
+}
